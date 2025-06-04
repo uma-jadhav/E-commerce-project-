@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.top-section {
+    background-color: #ffffff;
+}
+
+.main-heading {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 55px;
+}
+
+.product-card {
+    border-radius: 10px;
+    background-color: #fffffc;
+    padding-bottom: 10px;
+}
+
+.product-image {
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.card-heading {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #4a312a;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.link {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.part-heading {
+    font-family: "bree Serif";
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 85px;
+    font-size: 20px;
+
+}
+
+.kurti-section {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.part-image {
+    height: 50%;
+    width: 50%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.part-text {
+    color: #4d4d4d;
+    font-family: "bree serif";
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 70px;
+}
+
+.part-price {
+    font-family: "bree serif";
+    font-size: 20px;
+    padding-left: 70px;
+
+}
+
+.part-text1 {
+    font-family: Roboto;
+    color: #808080;
+    font-size: 10px;
+    padding-left: 70px;
+}

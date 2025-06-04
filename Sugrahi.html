@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="IMG-20250517-WA0011.jpg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+        </div>
+    </nav>
+    <div id="sectionHome">
+        <div class="top-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h1 class="main-heading"> Bestselling Products
+                        </h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 ">
+                        <div class="product-card shadow mb-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://www.textileinfomedia.com/img/dnfa/fancy-pure-cotton-kurtis-with-both-side-pocket-full.jpeg " class="product-image w-100" />
+                            </div>
+                            <h1 class="card-heading">Kurtis & dresses</h1>
+                            <p class="link" onclick="display('sectionKurti')">
+                                View All
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card shadow mb-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://www.littlefingersindia.com/wp-content/uploads/2022/07/LFbridalset299.jpg " class="product-image w-100" />
+                            </div>
+                            <h1 class="card-heading">Jwellery</h1>
+                            <p class="link" onclick="display('sectionJwellery')">
+                                View All
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card shadow mb-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://thumbs.dreamstime.com/b/ladies-gents-footwear-8732035.jpg" class="product-image w-100" />
+                            </div>
+                            <h1 class="card-heading">Footware</h1>
+                            <p href="" class="link" onclick="display('sectionFootware')">
+                                View All
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card shadow mb-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-image w-100" />
+                            </div>
+                            <h1 class="card-heading">Men Fasions</h1>
+                            <p class="link" onclick="display('sectionMenFasions')">
+                                View All
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card shadow mb-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://ethnicrace.com/wp-content/uploads/2024/03/Marathi-Look-In-Pink-Paithani-Silk-Saree.jpg" class="product-image w-100" />
+                            </div>
+                            <h1 class="card-heading">Saree</h1>
+                            <p class="link" onclick="display('sectionSaree')">
+                                View All
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card shadow mb-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://www.stitchfix.com/women/blog/wp-content/uploads/2022/21-03-11_Set_3_W_OF_v2_0169_2x3-scaled.jpeg" class="product-image w-100" />
+                            </div>
+                            <h1 class="card-heading">Bags</h1>
+                            <a href="" class="link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card shadow mb-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://rashmikanti.wordpress.com/wp-content/uploads/2018/07/fullsizerender-3.jpg" class="product-image w-100" />
+                            </div>
+                            <h1 class="card-heading">Beauty</h1>
+                            <a href="" class="link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card shadow mb-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIFqONY8jxiUvxWEcRBQjHTuthKn5TYvlUZA&s" class="product-image w-100" />
+                            </div>
+                            <h1 class="card-heading">Furniture</h1>
+                            <a href="" class="link">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionKurti">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="part-heading">Kurtis & Dresses</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://chidiyaa.com/cdn/shop/files/jpeg-optimizer_IMG_7694.jpg?v=1746013990&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text"> Shatabdi block printed cotton kurti</p>
+                        <h1 class="part-price">Rs.699 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://assets.ajio.com/medias/sys_master/root/20240314/MMha/65f202e616fd2c6e6a566cdd/-473Wx593H-467164574-maroon-MODEL.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text"> Line kurti with side fit</p>
+                        <h1 class="part-price">Rs.750 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/500x750/a12781a7f2ccb3d663f7fd01e1bd2e4e/d/e/design-no-4062-kurtis-collection-front.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text"> Stylish women cotton kurti</p>
+                        <h1 class="part-price">Rs.500 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.vibecity.in/providers/64b2567eddeadc0011219a6c/1000032508_73e6d6ea-e134-4d30-9014-e0704b43a6bb-3X.png" class="part-image" />
+                        </div>
+                        <p class="part-text">Cotton kurti blue print</p>
+                        <h1 class="part-price">Rs.899 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://images.cbazaar.com/images/Beige-N-Sea-Green-Printed-Cotton-Silk-Kurti-KRBS02301958-u.jpg " class="part-image" />
+                        </div>
+                        <p class="part-text"> Green printed cotton kurti</p>
+                        <h1 class="part-price">Rs.600 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://assets0.mirraw.com/images/12166033/image_long_webp.webp?1704456490" class="part-image" />
+                        </div>
+                        <p class="part-text">Girls kurti designer </p>
+                        <h1 class="part-price">Rs.899 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://assets0.mirraw.com/images/12166019/image_zoom.jpeg?1704456442" class="part-image" />
+                        </div>
+                        <p class="part-text">Arika girls casual wear </p>
+                        <h1 class="part-price">Rs.700 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://assets2.andaazfashion.com/media/catalog/product/cache/1/image/800x1200/a12781a7f2ccb3d663f7fd01e1bd2e4e/d/e/design-no-4014-kurti-collection_1.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Blue cotton printed indian kurti</p>
+                        <h1 class="part-price">Rs.450 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.sareeka.com/image/data2024/marvelous-pink-cotton-designer-kurti-with-mirror-work-278962.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Marvelous pink cotton designer kurti</p>
+                        <h1 class="part-price">Rs.999 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/BL/ZO/WV/95863835/ztu-p1-7--500x500.JPG" class="part-image" />
+                        </div>
+                        <p class="part-text">Stylish women short kurti </p>
+                        <h1 class="part-price">Rs.500 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://i.pinimg.com/564x/c0/17/94/c01794d5e31af1221f6d22b1e0f4d8d9.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Black Rayon kurti </p>
+                        <h1 class="part-price">Rs.900 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="sectionJwellery">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="part-heading">Jwellery</h1>
+                    </h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/products/SJ105G-1.jpg?v=1638519858&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Sara jwellery set</p>
+                        <h1 class="part-price">Rs.699 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/files/MC181ZMG.jpg?v=1724658606&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Lavika Multicolor Oxidised Choker Set </p>
+                        <h1 class="part-price">Rs.779 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/products/NL37FL_b443af11-73c8-44c5-965a-b9ee205922a3.jpg?v=1624969184&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Parthavi Nose Ring </p>
+                        <h1 class="part-price">Rs.200</h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/files/ComboProducts.jpg?v=1704283161&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text"> Bahubali Earrings with Hair Chain</p>
+                        <h1 class="part-price">Rs.999 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/products/ADB333W.jpg?v=1674220400&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Umaira White Bangles </p>
+                        <h1 class="part-price">Rs.700 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/files/ADB508QG_1.jpg?v=1710336853&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Manvika Bracelets </p>
+                        <h1 class="part-price">Rs.1000 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/products/MC145OX.jpg?v=1681820597&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Yukti Choker Set </p>
+                        <h1 class="part-price">Rs.649 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/files/E3310OX-E3312OX_1.jpg?v=1742816519&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">(Pack of 2) Silver Oxidised Earrings </p>
+                        <h1 class="part-price">Rs.499 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/products/ADB324MG_2.jpg?v=1650007936&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Harleen Bangles</p>
+                        <h1 class="part-price">Rs.549 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/files/A061W.jpg?v=1705308301&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Shahin White Payal/ Anklets</p>
+                        <h1 class="part-price">Rs.1099 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/products/NL46FL_a7b30ca3-3b15-4133-be93-fec592f7e1f8.jpg?v=1624971597&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text">Banu NosePin </p>
+                        <h1 class="part-price">Rs.349 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.ijewels.co.in/cdn/shop/files/T2165Wi.jpg?v=1728047915&width=700" class="part-image" />
+                        </div>
+                        <p class="part-text"> Mohina Wine Maangtikka</p>
+                        <h1 class="part-price">Rs.500 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionFootware">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="part-heading">Footware</h1>
+                    </h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/all/qTpKRunIGeihESvOLcByekKjr9bsLQnIVA9RvC7r.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Flip Flop Slippers </p>
+                        <h1 class="part-price">Rs.399 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/all/T3jtMNCZtHt0YCvhLKMaHVFfpQaTYx9EVpCrC18g.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Fashion Feet Ladies Chappals</p>
+                        <h1 class="part-price">Rs.500 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/all/9xM4xZczm8ebIROikMfUb7I5tIBPSOVOZnqu4Mfd.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text"> Women Footwear</p>
+                        <h1 class="part-price">Rs.299 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/all/vcKANrf79J8fF3apmwTdsFjvtesj3nidBIh0fIuD.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Traditional And Ethnic Wear Women Sandals </p>
+                        <h1 class="part-price">Rs.450 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/all/fjoumoOgXz70Hr8pN3EXBOP95YjKxngCVq5V8dsm.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Stylish Graceful Trendy Men Sports Shoes </p>
+                        <h1 class="part-price">Rs.700 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/all/Ye50DvVyLvZBadsV3bCLdnThqr5OUzhRErC0rZB1.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Casual Multi Colour Flip-Flops Slippers </p>
+                        <h1 class="part-price">Rs.499 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/all/WhmidsvNVmQVpgDJZY2KolE99Lm50Ns9q9vZwUth.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Fashion Feet Ladies Chappals </p>
+                        <h1 class="part-price">Rs.350 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/products/photos/LxOXUxyR2fM5muzxuqZRuuVr46N3sQPAQNyG9U02.jpeg" class="part-image" />
+                        </div>
+                        <p class="part-text">Best Polymer Women White Canvas Shoe,</p>
+                        <h1 class="part-price">Rs.299 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/products/photos/puTYBu7iTxWV1NVd9OTBxpIc9cCP4feOwgLQ4k5A.jpeg" class="part-image" />
+                        </div>
+                        <p class="part-text">FSS Heavy Duty Stylish Outdoor Boots </p>
+                        <h1 class="part-price">Rs.899 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/products/photos/5XZ0u2oI3IQ4xtLFH5FZsgNd6xhd5oPZvr9icqK7.jpeg" class="part-image" />
+                        </div>
+                        <p class="part-text"> ASIAN Men's Trigger-03 Running Shoes</p>
+                        <h1 class="part-price">Rs.800 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/products/photos/5PgbADaUfZqdQTH5CRML2Z2NVRZAjgrvDRU8GwQK.jpeg" class="part-image" />
+                        </div>
+                        <p class="part-text">Best Polymer Men's Slippers, Brown Colour </p>
+                        <h1 class="part-price">Rs.500 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://availeverything.com/public/uploads/products/photos/iQKxpHDVBlUbmBPsO2W1rvL93SPEvNS01w6u9OQn.jpeg" class="part-image" />
+                        </div>
+                        <p class="part-text"> Best Polymer Men's Fashion Sandal, Black and Brown colour</p>
+                        <h1 class="part-price">Rs.1000 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="part-heading">Men Fasion</h1>
+                    </h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://www.beyoung.in/api/cache/catalog/products/30-10/space_grey_chinos_for_men_base1_700x933.jpg" class="part-image" />
+                        </div>
+                        <p class="part-text">Space Grey Slim-Fit Trousers </p>
+                        <h1 class="part-price">Rs.500 </h1>
+                        <p class="part-text1"> Free delivery</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://godevil.in/cdn/shop/files/Godevil16-2024shoot03687.jpg?v=1727531435" class="part-image" />
+                            </div>
+                            <p class="part-text">Brown & White Crochet Multi Striped Casual Shirt for Men </p>
+                            <h1 class="part-price">Rs.999 </h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://godevil.in/cdn/shop/products/no-pain-no-gain-in-camo-print-black-oversized-t-shirt-for-men-963440.jpg?v=1695318197" class="part-image" />
+                            </div>
+                            <p class="part-text"> Camo Print Black Oversized T-Shirt for Men</p>
+                            <h1 class="part-price">Rs.899 </h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://godevil.in/cdn/shop/files/Go_Devil-16June-20244307.jpg?v=1719756546" class="part-image" />
+                            </div>
+                            <p class="part-text">Colourful Skull Printed Shirts With Pant </p>
+                            <h1 class="part-price">Rs.4000 </h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://godevil.in/cdn/shop/files/Godevil16-2024shoot03767.jpg?v=1727531184" class="part-image" />
+                            </div>
+                            <p class="part-text"> Yellow, Grey & White Oversized T-Shirt</p>
+                            <h1 class="part-price">Rs.600 </h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://godevil.in/cdn/shop/products/devil-printed-t-shirt-for-men-229859.jpg?v=1695317804" class="part-image" />
+                            </div>
+                            <p class="part-text">Devil Printed T-Shirt for Men </p>
+                            <h1 class="part-price">Rs.699</h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://www.beyoung.in/api/cache/catalog/products/shirt_squre_image_update_14_3_2022/army_green_cotton_solid_shirts_for_men_base_02_05_2024_700x933.jpg" class="part-image" />
+                            </div>
+                            <p class="part-text">Jade Green - Formal Shirts For Men </p>
+                            <h1 class="part-price">Rs.399 </h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://www.beyoung.in/api/cache/catalog/products/shirt_squre_image_update_14_3_2022/burgundy_cotton_solid_shirts_for_men_base_02_05_2024_700x933.jpg" class="part-image" />
+                            </div>
+                            <p class="part-text">Rustic Burgundy - Formal Shirts For Men </p>
+                            <h1 class="part-price">Rs.800 </h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://www.beyoung.in/api/cache/catalog/products/shirt_squre_image_update_14_3_2022/white_cotton_solid_shirts_for_men_base_02_05_2024_700x933.jpg" class="part-image" />
+                            </div>
+                            <p class="part-text"> Arctic White - Formal Shirts For Men</p>
+                            <h1 class="part-price">Rs.999 </h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://www.beyoung.in/api/cache/catalog/products/30-10/dark_grey_chinos_for_men_base1_700x933.jpg" class="part-image" />
+                            </div>
+                            <p class="part-text"> Dark Grey Slim-Fit Trousers</p>
+                            <h1 class="part-price">Rs.998</h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="kurti-section pt-3 pb-1 mb-3 border shadow">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://www.beyoung.in/api/cache/catalog/products/30-10/sand_brown_chinos_for_men_base1_700x933.jpg" class="part-image" />
+                            </div>
+                            <p class="part-text"> Sand Brown Slim-Fit Trousers</p>
+                            <h1 class="part-price">Rs.1000</h1>
+                            <p class="part-text1"> Free delivery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+
+</html>
